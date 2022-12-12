@@ -1,6 +1,6 @@
 import * as PIXI from 'pixi.js';
 import { HelloWorld } from './scenes/helloWorld';
-import { Fishes } from './scenes/fish';
+import Boid2D from './scenes/boid2D';
 const load = (app: PIXI.Application) => {
     return new Promise<void>((resolve) => {
         app.loader.add('assets/hello-world.png')
@@ -11,6 +11,8 @@ const load = (app: PIXI.Application) => {
     });
 };
 
+
+
 const main = async () => {
     // Main app
     let app = new PIXI.Application();
@@ -19,7 +21,7 @@ const main = async () => {
     document.body.style.margin = '0';
     app.renderer.view.style.position = 'absolute';
     app.renderer.view.style.display = 'block';
-    app.renderer.backgroundColor=0xdddddd
+    app.renderer.backgroundColor=0x666666
     // View size = windows
     app.renderer.resize(window.innerWidth, window.innerHeight);
     window.addEventListener('resize', (e) => {
@@ -31,7 +33,7 @@ const main = async () => {
     document.body.appendChild(app.view);
 
     // Set scene
-    var scene = new Fishes(app);
+    var scene = new Boid2D(app);
     app.stage.addChild(scene);
 };
 

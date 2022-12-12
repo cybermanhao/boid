@@ -14,12 +14,14 @@
         "html-webpack-plugin": "4.0.4",
         "prettier": "2.0.4",
         "ts-loader": "6.2.2",
+        "ts-shader-loader": "^2.0.2",
         "typescript": "3.8.3",
         "webpack": "4.42.1",
         "webpack-cli": "3.3.12",
         "webpack-dev-server": "^3.11.3"
     },
     "dependencies": {
+        "gl-matrix": "^3.4.3",
         "pixi.js": "5.2.1"
     }
 }
