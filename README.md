@@ -6,7 +6,7 @@ This setup is supposed to be used with VS Code, as configuration is provided so 
 
 ## Demo
 
-![pixijsstarterdemo](https://user-images.githubusercontent.com/1882000/117959954-cde93100-b31c-11eb-889b-4879bd596c6b.gif)
+![pixijsstarterdemo]https://cybermanhao.github.io/boid/
 
 ## Requirements
 
